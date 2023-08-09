@@ -4,7 +4,7 @@ A simple platform-dependant implementation of a class-driven progress dialog
 
 |macOS|Windows|
 |:----:|:----:|
-|![macOS](./Readme/progress macOS.gif)|![Windows](./Readme/progress Windows.gif)|
+|<img src="./Readme/progress macOS.gif"/>|<img src="./Readme/progress Windows.gif"/>|
 
 * The dialog box is managed by a worker, which disconnects it strongly from your code and doesn't slow it down. 
 
@@ -16,7 +16,14 @@ A simple platform-dependant implementation of a class-driven progress dialog
 
 ```4d
 var $progress : cs.progress
-$progress:=cs.progress.new()$progress.title:="Copy files"$progress.icon:="check"$progress.message:="We're doing something..."// Do something$progress.Close()
+$progress:=cs.progress.new()
+$progress.title:="Copy files"
+$progress.icon:="check"
+$progress.message:="We're doing something..."
+
+// Do something
+
+$progress.Close()
 ```
 
 📌 See the [class documentation](Documentation/Classes/progress.md) that describe properties & functions.
