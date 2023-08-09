@@ -1,0 +1,36 @@
+{
+	"(Default Forms)": {},
+	"(Default Project Methods)": {},
+	"(Default Tables)": {},
+	"HDI": {
+		"methods": [
+			"_confirm",
+			"_doSomething",
+			"COMPILER_HDI",
+			"HDI_delay",
+			"HDI_forEach",
+			"HDI_progress"
+		]
+	},
+	"Main": {
+		"methods": [
+			"COMPILER_",
+			"progressFormMethod",
+			"progressManager"
+		],
+		"forms": [
+			"MACOS",
+			"WINDOWS"
+		],
+		"classes": [
+			"progress"
+		]
+	},
+	"trash": {
+		"groups": [
+			"(Default Forms)",
+			"(Default Project Methods)",
+			"(Default Tables)"
+		]
+	}
+}

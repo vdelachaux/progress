@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+  <g>
+    <path d="M827.5,875h-631c-44.4,0-80.5-36.1-80.5-80.5V631h30v163.5c0,27.8,22.7,50.5,50.5,50.5h631c27.8,0,50.5-22.7,50.5-50.5V631   h30v163.5C908,838.9,871.9,875,827.5,875z"/>
+    <rect x="497" y="164" width="30" height="493"/>
+    <polygon points="672.5,346.2 512,185.7 351.5,346.2 330.3,325 512,143.3 693.7,325  "/>
+  </g>
+</svg>

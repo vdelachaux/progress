@@ -1,0 +1,26 @@
+* {
+	fontTheme: "normal";
+	stroke: automatic;
+}
+
+input {
+	enterable: false;
+	focusable: false;
+	contextMenu: "none";
+	fill: transparent;
+	borderStyle: "none";
+}
+
+.title {
+	fontSize: 12;
+	fontWeight:normal;
+}
+
+.message {
+	fontSize: 11;
+	styledText: true;
+}
+
+.icon {
+	pictureFormat: "proportionalCenter";
+}

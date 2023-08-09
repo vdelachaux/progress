@@ -1,0 +1,219 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 400,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 62,
+	"windowMaxHeight": 62,
+	"width": 400,
+	"height": 68,
+	"markerBody": 68,
+	"markerBreak": 68,
+	"markerFooter": 68,
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 25600
+	},
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"markerStop": {
+					"type": "line",
+					"top": 0,
+					"left": 365,
+					"height": 69,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					]
+				},
+				"markerNoStop": {
+					"type": "line",
+					"top": 0,
+					"left": 385,
+					"height": 69,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					]
+				},
+				"progress": {
+					"type": "progress",
+					"top": 27,
+					"left": 60,
+					"width": 325,
+					"height": 32,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1,
+					"events": []
+				},
+				"title": {
+					"type": "input",
+					"top": 7,
+					"left": 60,
+					"width": 325,
+					"height": 16,
+					"events": [],
+					"dataSource": "Form:C1466[\"\"].title",
+					"class": "title"
+				},
+				"message": {
+					"type": "input",
+					"top": 44,
+					"left": 60,
+					"width": 325,
+					"height": 12,
+					"events": [],
+					"dataSource": "Form:C1466[\"\"].message",
+					"class": "message"
+				},
+				"icon": {
+					"type": "input",
+					"top": 10,
+					"left": 10,
+					"width": 40,
+					"height": 40,
+					"dataSourceTypeHint": "picture",
+					"events": [],
+					"dataSource": "Form:C1466[\"\"].icon",
+					"class": "icon"
+				},
+				"SepLine": {
+					"type": "line",
+					"top": 67,
+					"left": 0,
+					"width": 400,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#555555",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"stop": {
+					"type": "button",
+					"top": 26,
+					"left": 370,
+					"width": 20,
+					"height": 20,
+					"visibility": "hidden",
+					"icon": "/.PRODUCT_RESOURCES/Internal Components/development.4dbase/Resources/images/searchPicker/Mac/close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"markerNoIcon": {
+					"type": "line",
+					"top": 0,
+					"left": 10,
+					"height": 69,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					]
+				},
+				"markerIcon": {
+					"type": "line",
+					"top": 0,
+					"left": 60,
+					"height": 69,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 103,
+					"left": 0,
+					"width": 148,
+					"height": 19,
+					"shortcutKey": "[Enter]",
+					"text": "trap enter (do nothing)",
+					"class": "dev"
+				},
+				"Bouton3": {
+					"type": "button",
+					"top": 127,
+					"left": 0,
+					"width": 148,
+					"height": 19,
+					"shortcutKey": "[Return]",
+					"text": "trap return (do nothing)",
+					"class": "dev"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 79,
+					"left": 0,
+					"width": 148,
+					"height": 19,
+					"shortcutKey": "[Esc]",
+					"text": "trap Esc (do nothing)",
+					"class": "dev"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"events": [
+		"onLoad",
+		"onClick",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"css": "progress.css",
+	"geometryStamp": 216,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"method": "progressFormMethod"
+}

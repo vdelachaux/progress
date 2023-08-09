@@ -1,0 +1,213 @@
+{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowSizingY": "fixed",
+	"windowMaxWidth": 32000,
+	"markerBody": 120,
+	"markerBreak": 120,
+	"markerFooter": 120,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"message": {
+					"type": "input",
+					"top": 53,
+					"left": 19,
+					"width": 441,
+					"height": 25,
+					"events": [],
+					"dataSource": "Form:C1466[\"\"].message",
+					"right": 460,
+					"class": "message"
+				},
+				"stop": {
+					"type": "button",
+					"top": 54,
+					"left": 440,
+					"width": 23,
+					"height": 23,
+					"visibility": "hidden",
+					"dataSource": "",
+					"events": [
+						"onClick"
+					],
+					"icon": "/.PRODUCT_RESOURCES/Internal Components/development.4dbase/Resources/images/searchPicker/Win/close.png",
+					"style": "custom",
+					"iconFrames": 4
+				},
+				"icon": {
+					"type": "input",
+					"top": 20,
+					"left": 19,
+					"width": 34,
+					"height": 33,
+					"dataSourceTypeHint": "picture",
+					"events": [],
+					"dataSource": "Form:C1466[\"\"].icon",
+					"class": "icon"
+				},
+				"title": {
+					"type": "input",
+					"top": 28,
+					"left": 62,
+					"width": 398,
+					"height": 16,
+					"events": [],
+					"dataSource": "Form:C1466[\"\"].title",
+					"right": 460,
+					"class": "title"
+				},
+				"markerStop": {
+					"type": "line",
+					"top": 1,
+					"left": 434,
+					"height": 130,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					],
+					"bottom": 131
+				},
+				"markerNoStop": {
+					"type": "line",
+					"top": 0,
+					"left": 462,
+					"height": 130,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					],
+					"bottom": 130
+				},
+				"markerNoIcon": {
+					"type": "line",
+					"top": 0,
+					"left": 19,
+					"height": 130,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					],
+					"bottom": 130
+				},
+				"markerIcon": {
+					"type": "line",
+					"top": 0,
+					"left": 62,
+					"height": 130,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"width": 1,
+					"startPoint": "topLeft",
+					"stroke": "#1e90ff",
+					"strokeDashArray": [
+						2,
+						2
+					],
+					"bottom": 130
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 172,
+					"left": 1,
+					"width": 148,
+					"height": 19,
+					"shortcutKey": "[Enter]",
+					"text": "trap enter (do nothing)",
+					"class": "dev"
+				},
+				"Bouton3": {
+					"type": "button",
+					"top": 196,
+					"left": 1,
+					"width": 148,
+					"height": 19,
+					"shortcutKey": "[Return]",
+					"text": "trap return (do nothing)",
+					"class": "dev"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 148,
+					"left": 1,
+					"width": 148,
+					"height": 19,
+					"shortcutKey": "[Esc]",
+					"text": "trap Esc (do nothing)",
+					"class": "dev"
+				},
+				"progress": {
+					"type": "progress",
+					"top": 78,
+					"left": 19,
+					"width": 441,
+					"height": 32,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1,
+					"events": [],
+					"right": 460,
+					"bottom": 110
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"css": "progress.css",
+	"geometryStamp": 239,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"width": 490,
+	"height": 120,
+	"method": "progressFormMethod",
+	"windowSizingX": "fixed"
+}
