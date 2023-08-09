@@ -86,20 +86,19 @@ The `icon` property accepts a `Text` or `Picture` value.
 
 * The values of type `Text` are the names of the embedded icons. The following values are supported:
 
-| |        | |        
+|Name|Icon|Name|Icon|
 |----|:----:|----|:----:|
-|"add"|<img src="../../Resources/add.svg"/>|"folder"|<img src="../../Resources/folder.svg"/>|
-|"archive"|<img src="../../Resources/archive.svg"/>|"infos"|<img src="../../Resources/infos.svg"/>|
-|"calculator"|<img src="../../Resources/calculator.svg"/>|"more"|<img src="../../Resources/more.svg"/>|
-|"check"|<img src="../../Resources/check.svg"/>|"receive"|<img src="../../Resources/receive.svg"/>|
-|"clock"|<img src="../../Resources/clock.svg"/>|"save"|<img src="../../Resources/save.svg"/>|
-|"compare"|<img src="../../Resources/compare.svg"/>|"send"|<img src="../../Resources/send.svg"/>|
-|"delete"|<img src="../../Resources/delete.svg"/>|"stat"|<img src="../../Resources/stat.svg"/>|
-|"download"|<img src="../../Resources/download.svg"/>|"update"|<img src="../../Resources/update.svg"/>|
-|"exchange"|<img src="../../Resources/exchange.svg"/>|"upload"|<img src="../../Resources/upload.svg"/>|
-|"file"|<img src="../../Resources/file.svg"/>|"wait"|<img src="../../Resources/wait.svg"/>|
-|"filter"|<img src="../../Resources/filter.svg"/>|
-
+|"add"|<img src="../../Resources/add.svg" width="32"/>|"folder"|<img src="../../Resources/folder.svg" width="32"/>|
+|"archive"|<img src="../../Resources/archive.svg" width="32"/>|"infos"|<img src="../../Resources/infos.svg" width="32"/>|
+|"calculator"|<img src="../../Resources/calculator.svg" width="32"/>|"more"|<img src="../../Resources/more.svg" width="32"/>|
+|"check"|<img src="../../Resources/check.svg" width="32"/>|"receive"|<img src="../../Resources/receive.svg" width="32"/>|
+|"clock"|<img src="../../Resources/clock.svg" width="32"/>|"save"|<img src="../../Resources/save.svg" width="32"/>|
+|"compare"|<img src="../../Resources/compare.svg" width="32"/>|"send"|<img src="../../Resources/send.svg" width="32"/>|
+|"delete"|<img src="../../Resources/delete.svg" width="32"/>|"stat"|<img src="../../Resources/stat.svg" width="32"/>|
+|"download"|<img src="../../Resources/download.svg" width="32"/>|"update"|<img src="../../Resources/update.svg" width="32"/>|
+|"exchange"|<img src="../../Resources/exchange.svg" width="32"/>|"upload"|<img src="../../Resources/upload.svg" width="32"/>|
+|"file"|<img src="../../Resources/file.svg" width="32"/>|"wait"|<img src="../../Resources/wait.svg" width="32"/>|
+|"filter"|<img src="../../Resources/filter.svg" width="32"/>|
 
 * Values of type `Picture` will be used as they are.
 
@@ -108,6 +107,8 @@ The `icon` property accepts a `Text` or `Picture` value.
 ### 🔹 <a name="cancellable">cancellable</a>
 
 ----
+If this property is **True**, a Stop button is displayed, allowing the user to interrupt the process immediately if [stopFormula](#stopFormula) is **Null** or depending on the result of [stopFormula](#stopFormula) execution.
+
 If this property is set to **False**, the `stopFormula` property is automatically reset to **Null**
 
 ### 🔹 <a name="stopFormula">stopFormula </a>
@@ -121,8 +122,6 @@ The `stopFormula` property must be a **4D**.Function which returns **True** if, 
 #DECLARE() : BooleanCONFIRM("Are you sure?")return Bool(OK)
 ```
 
-> 📌 If the property `cancellable` is **True** & the property `stopFormula` is **Null**, the property `isStopped` is immediatly set to **True**.
-
 #### Code sample:
 
 ```4d
@@ -131,6 +130,8 @@ $progress:=cs.progress.new()$progress.properties:={\    message: ""; \    sto
 For ($i; 1; 100; 1)		// Do something		If ($progress.isStopped)				break			End if End for If ($progress.isStopped)		// Do the cancellation work…
 		// Close after 2 sec.	$progress.Close(120)	return 	End if 
 ```
+
+> 📌 If the property `cancellable` is **True** & the property `stopFormula` is **Null**, the property `isStopped` is immediatly set to **True**.
 
 ### 🔸 <a name="forEach">forEach</a> 
 
